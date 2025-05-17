@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -21,10 +21,15 @@ export const Navbar = () => {
                         <Link to="/challenge">Challenge</Link>
                     </li>
                     <li>
-                        <Link to="/community">Community</Link>
+                        <Link to="/map">Resources</Link>
                     </li>
                     <li>
-                        <Link to="/map">Resources</Link>
+                        <Link to="/quiz">Quizzes</Link>
+                    </li>
+                    <li>
+                        <NavLink to="/chatbot" activeClassName={styles.active}>
+                            Chatbot
+                        </NavLink>
                     </li>
                 </ul>
             </div>
