@@ -1,0 +1,113 @@
+/* Pastel Colors */
+:root {
+  --pastel-pink: #f9dfe7;
+  --pastel-green: #d4edda;
+  --text-green: #2e8b57;
+  --text-gray: #444;
+  --white: #ffffff;
+}
+
+.aboutPage {
+  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-green));
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-gray);
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: var(--text-green);
+  background: linear-gradient(to right, #a0d9b4, #f9b3c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #666;
+  font-style: italic;
+}
+
+.missionSection, .offerSection, .closingSection {
+  margin-bottom: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 6px solid var(--text-green);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.missionSection:hover,
+.offerSection:hover,
+.closingSection:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--text-green);
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+li:hover {
+  background-color: #fbeef3;
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
