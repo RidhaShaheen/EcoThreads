@@ -1,0 +1,30 @@
+.Challenge {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.Image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.CompleteButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.CompletedButton {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
