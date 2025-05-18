@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import logo from '../../assets/image.png';
 
 export const Navbar = () => {
     return (
         <nav className={styles.navbar}> 
-            <Link className={styles.title} to="/sign"> {/* Changed from <a> to <Link> */}
-                Sustain Style
+            <Link className={styles.title} to="/sign"> 
+                <img src={logo} alt="Logo" className={styles.logo} /> EcoThread
             </Link>
 
             <div className={styles.menu}>
@@ -16,9 +17,6 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/challenge">Challenge</Link>
                     </li>
                     <li>
                         <Link to="/map">Resources</Link>

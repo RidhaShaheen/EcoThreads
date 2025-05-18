@@ -17,6 +17,11 @@ const articles = [
     title: "How to Care for Your Clothes to Make Them Last",
     url: "https://www.ecofashioncare.com/how-to-care-clothes/",
   },
+  {
+    id: 4,
+    title: "How to Care for Your Clothes to Make Them Last",
+    url: "https://www.ecofashioncare.com/how-to-care-clothes/",
+  },
 ];
 
 const donationLinks = [

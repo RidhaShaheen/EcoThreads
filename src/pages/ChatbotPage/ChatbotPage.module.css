@@ -5,38 +5,34 @@
   min-height: 100vh;
 }
 
-/* Updated styles to make chatbot messages look like text messages */
 .chatWindow {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
-  background: #f0f0f0;
+  background: #fff;
   height: 400px;
   overflow-y: auto;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .userMessage {
-  align-self: flex-end;
+  text-align: right;
   color: #fff;
   background: #4caf50;
-  padding: 10px 15px;
-  border-radius: 20px 20px 0 20px;
-  max-width: 70%;
-  word-wrap: break-word;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin: 5px 0;
+  display: inline-block;
 }
 
 .botMessage {
-  align-self: flex-start;
+  text-align: left;
   color: #000;
   background: #e0e0e0;
-  padding: 10px 15px;
-  border-radius: 20px 20px 20px 0;
-  max-width: 70%;
-  word-wrap: break-word;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin: 5px 0;
+  display: inline-block;
 }
 
 .inputArea {

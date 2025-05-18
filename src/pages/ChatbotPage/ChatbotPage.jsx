@@ -16,7 +16,7 @@ const ChatbotPage = () => {
     setTimeout(() => {
       const botMessage = {
         role: "bot",
-        content: "Thank you for your message! I am here to help you discover your personalized style and provide fashion tips."
+        content: "Thank you for your message! I am here to help with sustainabile fashion.",
       };
       setMessages((prev) => [...prev, botMessage]);
     }, 1000);
@@ -24,7 +24,7 @@ const ChatbotPage = () => {
 
   return (
     <div className={styles.chatbotPage}>
-      <h1>Personalized Stylist Chatbot 💃</h1>
+      <h1>EcoThreads Chatbot</h1>
       <div className={styles.chatWindow}>
         {messages.map((msg, index) => (
           <div
@@ -40,7 +40,7 @@ const ChatbotPage = () => {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask me about your style..."
+          placeholder="Type your message..."
         />
         <button onClick={handleSend}>Send</button>
       </div>
