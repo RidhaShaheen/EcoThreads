@@ -42,3 +42,11 @@
 .menuitems a:hover {
     color: var(--color-accent); 
 }
+
+/* Add styles for the logo */
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
