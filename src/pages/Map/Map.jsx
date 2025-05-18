@@ -60,6 +60,19 @@ const sustainabilityTips = [
   "Avoid impulse buys, plan your wardrobe carefully.",
 ];
 
+const videos = [
+  {
+    id: 1,
+    title: "Sustainable Fashion Tips",
+    embedUrl: "https://www.youtube.com/embed/LWvOlZ4hPU0",
+  },
+  {
+    id: 2,
+    title: "Eco-Friendly Living",
+    embedUrl: "https://www.youtube.com/embed/BiSYoeqb_VY",
+  },
+];
+
 const Resources = () => {
   return (
     <div className={styles.resourcesPage}>
@@ -151,6 +164,23 @@ const Map = () => {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Videos</h2>
+        <div className={styles.videoContainer}>
+          {videos.map((video) => (
+            <div key={video.id} className={styles.videoItem}>
+              <iframe
+                src={video.embedUrl}
+                title={video.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

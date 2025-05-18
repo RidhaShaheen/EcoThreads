@@ -14,11 +14,6 @@ const quizzes = [
     description: 'Determine if you\'re more of a Classic, Bohemian, Edgy, or Romantic dresser.',
   },
   {
-    id: 'seasonal-color',
-    title: 'Seasonal Color Analysis',
-    description: 'Find out which color palette complements your natural features—Spring, Summer, Autumn, or Winter.',
-  },
-  {
     id: 'fashion-era',
     title: 'Which Fashion Era Inspires You?',
     description: 'Explore if your fashion sense is rooted in the \'70s boho, \'80s glam, \'90s grunge, or 2000s chic.',

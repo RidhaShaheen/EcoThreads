@@ -166,3 +166,20 @@ p {
     transform: translateY(0);
   }
 }
+
+.videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.videoItem {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.videoItem iframe {
+  width: 100%;
+  height: 315px;
+}
