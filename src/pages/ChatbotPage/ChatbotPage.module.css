@@ -43,7 +43,7 @@
   align-self: flex-end;
 }
 
-.botMessage {
+.assistantMessage {
   text-align: left;
   color: #000;
   background: #e0e0e0;
@@ -56,7 +56,7 @@
   align-self: flex-start;
 }
 
-.inputArea {
+.inputContainer {
   display: flex;
   gap: 10px;
   background: rgba(255, 255, 255, 0.9);
