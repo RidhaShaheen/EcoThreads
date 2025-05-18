@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Quiz.module.css';
+import capsuleWardrobeQuizData from './capsuleWardrobeQuizData';
+
+const quizDataMap = {
+  'capsule-wardrobe': capsuleWardrobeQuizData,
+};
 
 const Quiz = ({ quizData }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -30,6 +35,9 @@ const Quiz = ({ quizData }) => {
       <div className={styles.resultContainer}>
         <h2>Your Result: {result}</h2>
         <p>{quizData.results[result]}</p>
+        <button className={styles.goBackButton} onClick={() => window.location.href = '/quiz'}>
+          Go Back to Quizzes
+        </button>
       </div>
     );
   }

@@ -1,23 +1,82 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .quizPage {
-  background: linear-gradient(135deg, #e0f7e9, #fce4ec);
-  color: #2e8b57;
-  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-green));
   padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-gray);
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.quizPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.splitContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.leftPane, .rightPane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leftPane {
+  background: #e8f5e9;
+}
+
+.rightPane {
+  background: #e3f2fd;
 }
 
 .header {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  color: var(--text-green);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.subtopicHeader {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--text-green);
+  margin-bottom: 20px;
 }
 
 .quizList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
   justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .quizCard {
@@ -25,7 +84,8 @@
   border: 2px solid #fce4ec;
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
+  max-width: 300px;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -57,4 +117,12 @@
 
 .quizLink:hover {
   background-color: #276749;
+}
+
+.mainHeader {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-green);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
 }

@@ -1,4 +1,3 @@
-/* Pastel Colors */
 :root {
   --pastel-pink: #f9dfe7;
   --pastel-green: #d4edda;
@@ -18,7 +17,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Animations */
+.aboutPage:hover {
+  background: #f3e8f5;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -47,12 +49,24 @@
   animation: slideIn 1s ease-in-out;
 }
 
+.headerSection h1 {
+  font-size: 3rem;
+  color: var(--text-green);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.headerSection p {
+  font-size: 1.3rem;
+  color: #6a6f54;
+  font-weight: 500;
+}
+
 .title {
   font-size: 3.2rem;
   color: var(--text-green);
-  background: linear-gradient(to right, #a0d9b4, #f9b3c2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 .tagline {
@@ -78,12 +92,13 @@
   transform: translateY(-5px);
 }
 
-h2 {
+.missionSection h2, .offerSection h2, .closingSection h2 {
   font-size: 2rem;
   color: var(--text-green);
   margin-bottom: 15px;
-  border-bottom: 2px dashed #ccc;
-  padding-bottom: 5px;
+  border-bottom: 2px solid var(--text-green);
+  padding-bottom: 6px;
+  letter-spacing: 1px;
 }
 
 ul {
