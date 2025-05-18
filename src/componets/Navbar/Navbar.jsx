@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import logo from '../../assets/96f0963f-b558-424d-8dd1-f8d64f12362f.png';
+import logo from '/assets/96f0963f-b558-424d-8dd1-f8d64f12362f.png';
 
 export const Navbar = () => {
     return (
