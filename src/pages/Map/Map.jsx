@@ -4,41 +4,51 @@ import styles from "./Map.module.css";
 const articles = [
   {
     id: 1,
-    title: "The Environmental Impact of Fast Fashion",
-    url: "https://www.sustainability-times.com/fashion/environmental-impact-fast-fashion/",
+    title: "The Environmental Impact of Fast Fashion, Explained",
+    url: "https://earth.org/fast-fashions-detrimental-effect-on-the-environment/",
   },
   {
     id: 2,
-    title: "10 Easy Ways to Shop Sustainably",
-    url: "https://www.greenlivingtips.com/sustainable-shopping/",
+    title: "TOOLKIT: HOW TO SUSTAINABLY SHOP FOR YOUR CLOTHES",
+    url: "https://www.earthday.org/toolkit-how-to-shop-for-your-clothes/",
   },
   {
     id: 3,
-    title: "How to Care for Your Clothes to Make Them Last",
-    url: "https://www.ecofashioncare.com/how-to-care-clothes/",
+    title: "8 Ways to Make Your Clothes Last Longer To Practice a Sustainable Lifestyle",
+    url: "https://thegoodtee.com/blogs/news/howtobuyqualityclothing",
   },
   {
     id: 4,
-    title: "How to Care for Your Clothes to Make Them Last",
-    url: "https://www.ecofashioncare.com/how-to-care-clothes/",
+    title: "Overconsumption in the fashion industry",
+    url: "https://www.fashionrevolution.org/overconsumption-in-the-fashion-industry/",
+  },
+  {
+    id: 5,
+    title: "7 Fast Fashion Companies Responsible for Environmental Pollution",
+    url: "https://earth.org/fast-fashion-companies/",
+  },
+  {
+    id: 6,
+    title: "99 Sustainable Clothing Brands By Budget ",
+    url: "https://www.thegoodtrade.com/features/fair-trade-clothing/",
   },
 ];
 
 const donationLinks = [
   {
     id: 1,
-    name: "Fashion Revolution Foundation",
-    url: "https://www.fashionrevolution.org/",
+    name: "Clean Clothes Campaign",
+    url: "https://cleanclothes.org/donate",
   },
   {
     id: 2,
-    name: "Global Recycling Foundation",
-    url: "https://globalrecyclingfoundation.org/",
+    name: "Fashion Revolution",
+    url: "https://www.fashionrevolution.org/donate/,",
   },
   {
     id: 3,
-    name: "Charity: Water",
-    url: "https://www.charitywater.org/",
+    name: "Kitchener (Cambridge, Waterloo) Clothing/Textile Recycling",
+    url: "https://recyclingquotes.com/kitchener-cambridge-waterloo-clothingtextile-recycling.html",
   },
 ];
 
